@@ -2,25 +2,20 @@ package com.demo;
 
 public class CalculatorA {
 
-    public int calculateSum(int a, int b) {
-        int result = 0;
-
-        // Duplicate logic
-        for (int i = a; i <= b; i++) {
-            result = result + i;
+    public int method1() {
+        int sum = 0;
+        for (int i = 0; i < 100; i++) {
+            sum += i;
+            sum += i * 2;
+            sum += i * 3;
+            sum += i * 4;
+            sum += i * 5;
+            sum += i * 6;
+            sum += i * 7;
+            sum += i * 8;
+            sum += i * 9;
+            sum += i * 10;
         }
-
-        return result;
-    }
-
-    public int calculateSquareSum(int a, int b) {
-        int result = 0;
-
-        // Duplicate logic
-        for (int i = a; i <= b; i++) {
-            result = result + i;
-        }
-
-        return result * result;
+        return sum;
     }
 }
